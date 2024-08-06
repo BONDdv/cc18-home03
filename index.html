@@ -6,37 +6,7 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Shopping-cart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        select {
-            /* font-size: 16px;  */
-        }
-        
-        .green-dot {
-            color: green;
-        }
-    </style>
-       
-    <script>
-        function updateLabel(selectId, labelId) {
-            var selectElement = document.getElementById(selectId);
-            var selectedIndex = selectElement.selectedIndex;
-            var selectedOptionValue = selectElement.options[selectedIndex].value;
-
-            var numberOfDots = parseInt(selectedOptionValue);
-            var dots = '';
-            for (var i = 0; i < numberOfDots; i++) {
-                dots += '<span class="green-dot">• </span>';
-            }
-
-            var labelElement = document.getElementById(labelId);
-            labelElement.innerHTML = '' + dots;
-        }
-
-        window.onload = function() {
-            updateLabel('levels1', 'level-label1');
-            updateLabel('levels2', 'level-label2');
-        }
-    </script>
+   
 </head>
 <body>
     <div class="main">
@@ -60,10 +30,10 @@
         <div class="shop">
             <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
             <div class="icshop"><i class="fa-solid fa-cart-shopping"></i></div>
-            <div class="sing">
-                <p style="font-weight: bold;">LOGIN</p>
-                <p style="font-weight: bold;">SIGN UP</p>
-            </div>
+            
+                <div>LOGIN</div>
+                <div>SIGN UP</div>
+            
         </div>
     </div>
 
@@ -76,7 +46,7 @@
             <div class="c1">
                 <div class="ic1"><i class="fa-solid fa-trash"></i></div>
                 <div class="gd">
-                    <div class="background">
+                    <div class="background1">
                         <div class="icdoc"><img src="./doc.png" alt="" width="25px"></div>
                         <div class="t1"><p style="font-weight: bold;">Google Docs</p></div>
                         <div class="t2"><p style="font-size: 10px;">Use for business</p></div>            
@@ -133,7 +103,7 @@
                     </div>
                     <div class="suboder2">
                         <div class="sub3"><img src="./promotion.png" alt="" width="20px"></div>
-                        <div class="sub4">Promotion</div>
+                        <div class="sub4">Promotion code</div>
                         <div class="sub5">APPLY</div>
                     </div>
                 <div class="total">
