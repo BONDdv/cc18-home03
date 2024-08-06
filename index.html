@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Shopping-cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        select {
+            /* font-size: 16px;  */
+        }
+        
+        .green-dot {
+            color: green;
+        }
+    </style>
+       
+    <script>
+        function updateLabel(selectId, labelId) {
+            var selectElement = document.getElementById(selectId);
+            var selectedIndex = selectElement.selectedIndex;
+            var selectedOptionValue = selectElement.options[selectedIndex].value;
+
+            var numberOfDots = parseInt(selectedOptionValue);
+            var dots = '';
+            for (var i = 0; i < numberOfDots; i++) {
+                dots += '<span class="green-dot">• </span>';
+            }
+
+            var labelElement = document.getElementById(labelId);
+            labelElement.innerHTML = '' + dots;
+        }
+
+        window.onload = function() {
+            updateLabel('levels1', 'level-label1');
+            updateLabel('levels2', 'level-label2');
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+    <div class="toppage">
+        <div class="jb">
+            <div class="symbol1"><i class="fa-solid fa-j"></i></div>
+            <div class="jb1">
+                <p style="font-weight: bold;">Job</p>
+                <p>Passcard</p>
+            </div>
+        </div>
+
+        <div class="ab">
+            <div class="ab1">
+                <p style="font-weight: bold;">ABOUT US</p>
+                <p style="font-weight: bold;">PASSCARD</p>
+                <p style="font-weight: bold;">PROFILE</p>
+            </div>
+        </div>
+
+        <div class="shop">
+            <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="icshop"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="sing">
+                <p style="font-weight: bold;">LOGIN</p>
+                <p style="font-weight: bold;">SIGN UP</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my">
+        <h1>My Cart</h1>
+    </div>
+
+    <div class="bottompage">
+        <div class="cart">
+            <div class="c1">
+                <div class="ic1"><i class="fa-solid fa-trash"></i></div>
+                <div class="gd">
+                    <div class="background">
+                        <div class="icdoc"><img src="./doc.png" alt="" width="25px"></div>
+                        <div class="t1"><p style="font-weight: bold;">Google Docs</p></div>
+                        <div class="t2"><p style="font-size: 10px;">Use for business</p></div>            
+                    </div>
+                </div>
+                <div class="se">
+                    <div class="GoogleDocs">Google Docs</div>
+                    <div class="select1">
+                        <form action="/action_page.php">
+                            <label id="level-label1" for="levels1"></label>
+                            <select name="levels" id="levels1" onchange="updateLabel('levels1', 'level-label1')">
+                                <option value="1">LV1-3</option>
+                                <option value="2">LV2-3</option>
+                                <option value="3">LV3-3</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="prices"><p>THB 150</p></div>
+                </div>
+            </div>
+            <div class="c2">
+                <div class="ic2"><i class="fa-solid fa-trash"></i></div>
+                <div class="gs">
+                    <div class="background2">
+                        <div class="icgs"><img src="./gs.png" alt="" width="25px"></div>
+                        <div class="t3"><p style="font-weight: bold;">Google Slide</p></div>
+                        <div class="t4"><p style="font-size: 10px;">Use for business</p></div>            
+                    </div>
+                </div>
+                <div class="se2">
+                    <div class="GoogleSlide">Google Slide</div>
+                    <div class="select2">
+                        <form action="/action_page.php">
+                            <label id="level-label2" for="levels2"></label>
+                            <select name="levels" id="levels2" onchange="updateLabel('levels2', 'level-label2')">
+                                <option value="1">LV1-3</option>
+                                <option value="2">LV2-3</option>
+                                <option value="3">LV3-3</option>
+                                <option value="4">LV4-4</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="prices"><p>THB 150</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="order">
+            <div class="Orderinfo">
+                <h4 class="o">Order info</h4>
+                    <div class="suboder1">
+                        <div class="sub1">Subtotal</div>
+                        <div class="sub2">THB 300</div>
+                    </div>
+                    <div class="suboder2">
+                        <div class="sub3"><img src="./promotion.png" alt="" width="20px"></div>
+                        <div class="sub4">Promotion</div>
+                        <div class="sub5">APPLY</div>
+                    </div>
+                <div class="total">
+                    <div class="pay">
+                        Total payment
+                    </div>
+                    <div class="thb"><p style="font-weight: bold;">THB300</p></div>
+                </div>
+                <div class="litc">LONG IN TO CHECKOUT</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

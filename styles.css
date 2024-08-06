@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+.main {
+    /* width: 100wh; */
+    
+    margin: 100px 100px;
+    
+    border: solid lightblue;
+    
+}
+body {
+    background-color: rgb(224, 224, 224);
+}
+
+.toppage {
+    display: flex;
+    margin: 0px 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid lightgray;
+}
+
+.jb {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 5px;
+}
+
+.symbol1 {
+    margin-top: 15px;
+    width: 30px;
+}
+
+.jb1 {
+    display: flex;
+    font-size: 15px;
+}
+
+.ab {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.ab1 {
+    display: flex;
+    margin-bottom: auto;
+    gap: 10px;
+}
+
+.shop {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 10px;
+    font-size: 10px;
+}
+
+.sing {
+    display: flex;
+    gap: 20px;
+}
+
+.search {
+    margin-top: 10px;
+}
+
+.icshop {
+    margin-top: 10px;
+}
+
+.my {
+    margin: 100px 60px;
+}
+
+.bottompage {
+    margin: 100px 200px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c1, .c2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: solid lightgray;
+    padding: 5px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.ic1, .ic2 {
+    display: flex;
+    margin-bottom: 50px;
+    padding: 5px;
+    border: solid green;
+    border-radius: 50%;
+}
+
+.gd {
+    position: relative;
+    padding: 40px;
+    width: 100px;
+    background-color: lightskyblue;
+    border-radius: 10%;
+    margin-bottom: 50px;
+}
+.gs {
+    position: relative;
+    padding: 40px;
+    width: 100px;
+    background-color: orange;
+    border-radius: 10%;
+    margin-bottom: 50px;
+}
+
+.icdoc, .icgs {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.t1, .t3 {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    color: white;
+    font-size: 10px;
+}
+
+.t2, .t4 {
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    color: white;
+    font-size: 5px;
+}
+
+.order {
+    align-self: flex-start;
+    /* border: solid lightgray; */
+    background-color: white;
+    margin: 10px 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.order .Orderinfo {
+    border: solid lightgray;
+}
+.suboder1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    margin-bottom: 20px;
+}
+
+.suboder2 {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 200px; */
+    /* margin-bottom: 20px; */
+    border-bottom: solid lightgray;
+    padding: 10px;
+}
+
+.sub5 {
+    display: flex;
+    border: solid lightgreen;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 5px;
+    
+}
+.pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thb {
+    font-size: 30px;
+    color: lightgreen;
+}
+
+.litc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    color: black;
+    margin-bottom: 30px;
+    padding: 5px;
+    border-radius: 10px;
+}
